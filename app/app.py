@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-app = Flask(__name__)
+app = Flask("app", static_folder="static/dist")
 
 DEBUG = True
 PORT = 8000
