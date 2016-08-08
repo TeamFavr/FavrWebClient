@@ -1,14 +1,10 @@
 module.exports = function () {
   var App = require("./components/App.vue")
   var Vue = require("Vue");
-  var $ = require("jquery");
+  var jq = require("jquery");
 
-  window.$ = $;
-  window.jQuery = $;
-
-  //flat_ui.js not working
-  //var flat_ui = require("./flat-ui")
-  //var flui_vid = require("./video")
+  window.$ = jq;
+  window.jQuery = jq;
 
   $(document).ready(function () {
     new Vue({
