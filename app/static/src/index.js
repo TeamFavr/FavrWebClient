@@ -1,5 +1,6 @@
 module.exports = function () {
-  var LandingCarousel = require("./components/LandingCarousel.vue")
+  var LandingCarousel = require("./components/LandingCarousel.vue");
+  var FeatureVue = require("./components/Feature.vue");
   var Vue = require("Vue");
   var jq = require("jquery");
 
@@ -10,7 +11,8 @@ module.exports = function () {
     new Vue({
       el: 'body',
       components: {
-        "landing-carousel": LandingCarousel
+        "landing-carousel": LandingCarousel,
+        "feature": FeatureVue
       }
     });
   });
