@@ -1,5 +1,5 @@
 module.exports = function () {
-  var App = require("./components/App.vue")
+  var LandingCarousel = require("./components/LandingCarousel.vue")
   var Vue = require("Vue");
   var jq = require("jquery");
 
@@ -10,7 +10,7 @@ module.exports = function () {
     new Vue({
       el: 'body',
       components: {
-        app: App
+        "landing-carousel": LandingCarousel
       }
     });
   });
