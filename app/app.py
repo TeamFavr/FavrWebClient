@@ -6,7 +6,7 @@ PORT = 8000
 HOST = '0.0.0.0'
 
 @app.route("/")
-def hello():
+def index():
     return render_template("index.jinja")
 
 if __name__ == "__main__":
