@@ -3,6 +3,7 @@ module.exports = function () {
   var Vue = require("Vue");
   var $ = require("jquery");
   window.$ = $;
+  window.jQuery = $;
 
   $(document).ready(function () {
     new Vue({

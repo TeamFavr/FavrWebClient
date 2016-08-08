@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %}Favr{% endblock %}</title>
-    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" charset="utf-8">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </head>
   <body>
     {% block body %}
