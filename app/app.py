@@ -6,8 +6,12 @@ PORT = 8000
 HOST = '0.0.0.0'
 
 @app.route("/")
-def index():
-    return render_template("index.jinja")
+def landing():
+    return render_template("landing.jinja")
+
+@app.route("/home")
+def home():
+    return render_template("home.jinja")
 
 if __name__ == "__main__":
     app.run(debug=DEBUG, host=HOST, port=PORT)
