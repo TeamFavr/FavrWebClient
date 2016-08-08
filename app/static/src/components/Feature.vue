@@ -20,8 +20,6 @@
       </div>
     </span>
 
-
-
     <span v-else>
       <div class="col-md-4">
         <img src="{{ imgUrl }}" class="img-responsive" alt="placeholder" />
