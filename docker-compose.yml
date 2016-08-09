@@ -1,0 +1,9 @@
+version: '2'
+services:
+  webclient:
+    build: .
+    command: python manage.py run
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
