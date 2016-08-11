@@ -92,3 +92,4 @@ node_modules/
 *.bundle.js
 *.bundle.min.js
 .DS_Store
+.idea/
