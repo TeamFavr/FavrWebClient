@@ -1,2 +1,2 @@
-app/static/dist linguist-vendor
-app/static/sass/vendor linguist-vendor
+app/static/dist/* linguist-vendor
+app/static/sass/vendor/* linguist-vendor
