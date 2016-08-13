@@ -4,14 +4,11 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
             <h1>Welcome to Favr</h1>
-            <p>The place to track your friendly debts</p>
-            <p>
-              <a class="btn btn-primary btn-large" href="#features">Learn More</a>
-            </p>
+            <p> The place to track your friendly debts </p>
             <hr>
             <p>
-              <a class="btn btn-primary btn-large">Sign Up</a>
-              <a class="btn btn-default btn-large">Sign In</a>
+              <a class="btn btn-primary btn-large" type="button" href="{{ url_for('register') }}">Register</a>
+              <a class="btn btn-default btn-large" type="button" href="{{ url_for('login') }}">Login</a>
             </p>
         </header>
 

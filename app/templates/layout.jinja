@@ -23,8 +23,8 @@
           <li><a href="{{ url_for('home')}}">Home</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <button type="button" class="btn btn-primary navbar-btn">Sign Up</button>
-          <button type="button" class="btn btn-default navbar-btn">Sign In</button>
+          <a type="button" class="btn btn-primary navbar-btn" href="{{ url_for('register') }}">Register</a>
+          <a type="button" class="btn btn-default navbar-btn" href="{{ url_for('login') }}">Login</a>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
