@@ -22,5 +22,13 @@ def home():
 def config_url():
     return g.api_url
 
+@app.route("/login")
+def login():
+    return render_template("login.jinja")
+
+@app.route("/register")
+def register():
+    return render_template("register.jinja")
+
 if __name__ == "__main__":
     app.run(debug=DEBUG, host=HOST, port=PORT)

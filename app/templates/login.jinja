@@ -1,0 +1,39 @@
+{% extends "layout.jinja" %}
+
+{% block body %}
+    <div class="container">
+        <form method="post" class="form-signin">
+            <h2 class="form-signin-heading">Login</h2>
+
+            <label for="inputEmail">Email address</label>
+            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+            {% if formErrors and formErrors.email %}
+                <br>
+                <ul class="text-danger">
+                    {% for error in formErrors.email %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <br>
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+            {% if formErrors and formErrors.password %}
+                <br>
+                <ul class="text-danger">
+                    {% for error in formErrors.password %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <br>
+
+            <button class="btn btn-primary btn-block" type="submit">Login</button>
+            <br>
+            <a class="btn btn-danger btn-block" type="button" href="/fogot_pass">Forgot Password?</a>
+            <hr style="border-color: #2c3e50 !important;">
+            <a class="btn btn-default btn-block" type="button" href="/register">Register</a>
+        </form>
+
+    </div> <!-- /container -->
+{% endblock %}
